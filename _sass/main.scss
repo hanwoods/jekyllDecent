@@ -15,9 +15,6 @@
         }
 
         .nav {
-            &:before, &:after {
-                background: linear-gradient(to right, rgba($color-black, 0) 0%,rgba($color-black, 1) 50%,rgba($color-black, 0) 100%);
-            }
         }
     }
 
