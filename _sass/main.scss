@@ -2,7 +2,7 @@
 .main-header {
     margin-bottom: 40px;
     padding-top: 10rem;
-    background-size: 1000px 200px;
+    background-size: 9000px 100px;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -11,13 +11,12 @@
         .page-title a,
         .page-description,
         .nav a {
-            color: $color-white;
-            text-shadow: 1px 1px 5px rgba($color-black, 0.5);
+            color: $color-black;
         }
 
         .nav {
             &:before, &:after {
-                background: linear-gradient(to right, rgba($color-white, 0) 0%,rgba($color-white, 1) 50%,rgba($color-white, 0) 100%);
+                background: linear-gradient(to right, rgba($color-black, 0) 0%,rgba($color-black, 1) 50%,rgba($color-black, 0) 100%);
             }
         }
     }
@@ -52,10 +51,7 @@
     .page-title {
         margin: 0 auto 15px;
         a {
-            font-family: Mrs Saint Delafield;
             font-size: 70px;
-            text-decoration: none;
-            text-shadow: 1px 1px 5px rgba($color-black, 0.3);
         }
     }
 
