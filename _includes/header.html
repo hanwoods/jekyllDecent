@@ -5,17 +5,13 @@
 {% endif %}
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 <header>
-
-
-<img src="{{ cover | prepend: site.github.url | prepend: site.baseurl}}" style="width:1000px;height:180px;>
-    <br>
-    <br>
+  <br>
+<img src="{{ cover | prepend: site.github.url | prepend: site.baseurl}}" style="width:1000px;height:180px;padding-left:50px">
     <br>
     <br>
     <div class="nav">
       <ul>
-        <li><a class="page-link" href="{{ site.github.url | prepend: site.baseurl}}/" title="Hannah">Hannah Woods</a></li>
-        <li><a class="page-link" href="{{ site.github.url | prepend: site.baseurl}}/" title="Kyle">Kyle Sellars</a></li>
+        <a class="page-link" href="{{ site.github.url | prepend: site.baseurl}}/" title="Hannah">HANNAH WOODS</a> | <a class="page-link" href="{{ site.github.url | prepend: site.baseurl}}/" title="Kyle">KYLE SELLARS</a>
       </ul>
         <ul>
             <li><a class="page-link" href="{{ site.github.url | prepend: site.baseurl}}/" title="Home">Home</a></li>
@@ -38,7 +34,7 @@
 </header>
 
 <style>
-  page-link {
+  .page-link {
     font-family: Raleway
   }
 </style>
