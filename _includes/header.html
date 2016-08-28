@@ -6,35 +6,39 @@
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 <header>
   <br>
-<img src="{{ cover | prepend: site.github.url | prepend: site.baseurl}}" style="width:1000px;height:180px;padding-left:50px">
-    <br>
-    <br>
+  <img src="{{ cover | prepend: site.github.url | prepend: site.baseurl}}" style="width:1000px;height:180px;padding-left:50px">
     <div class="nav">
       <ul>
         <a class="page-link" href="{{ site.github.url | prepend: site.baseurl}}/" title="Hannah">HANNAH WOODS</a> | <a class="page-link" href="{{ site.github.url | prepend: site.baseurl}}/" title="Kyle">KYLE SELLARS</a>
       </ul>
-        <ul>
-            <li><a class="page-link" href="{{ site.github.url | prepend: site.baseurl}}/" title="Home">Home</a></li>
+      <ul>
+          <a class="page-sub-link" href="{{ site.github.url | prepend: site.baseurl}}/" title="adventures">   ADVENTURES   </a>
 
-            {% assign pages = site.pages | sort:"weight"  %}
-            {% for my_page in pages %}
+          {% assign pages = site.pages | sort:"weight"  %}
+          {% for my_page in pages %}
 
-            {% if my_page.menutitle %}
-            {% assign title = my_page.menutitle %}
-            {% elsif site.title %}
-            {% assign title = my_page.title %}
-            {% endif %}
+          {% if my_page.menutitle %}
+          {% assign title = my_page.menutitle %}
+          {% elsif site.title %}
+          {% assign title = my_page.title %}
+          {% endif %}
 
-            {% if title and my_page.visible != false %}
-            <li><a class="page-link" href="{{ my_page.url | prepend: site.github.url | prepend: site.baseurl}}" title="{{ title }}">{{ title }}</a></li>
-            {% endif %}
-            {% endfor %}
-        </ul>
+          {% if title and my_page.visible != false %}
+          <a class="page-sub-link" href="{{ my_page.url | prepend: site.github.url | prepend: site.baseurl}}" title="{{ title }}">  {{ title }}  </a><
+          {% endif %}
+          {% endfor %}
+      </ul>
     </div>
 </header>
 
 <style>
   .page-link {
-    font-family: Raleway
+    font-family: Raleway;
+    font-weight: bold;
+    color: black;
+  }
+  .page-sub-link {
+    font-family: Raleway;
+    color: black;
   }
 </style>

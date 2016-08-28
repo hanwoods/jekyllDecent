@@ -1,12 +1,12 @@
 ---
 layout:    about
-permalink: "/about/"
-author:    jwillmer
-keywords:  about person demo example
-title:     About Jens Willmer
-menutitle: About
+permalink: "/projects/"
+author:    hanwoods
+keywords:  projects
+title:     PROJECTS
+menutitle: projects
 weight:    90
-excerpt:   This page contains the curriculum vitae (CV) of the author.
+excerpt:   our projects.
 ---
 
 ## Profile
