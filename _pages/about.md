@@ -4,7 +4,7 @@ permalink: "/projects/"
 author:    hanwoods
 keywords:  projects
 title:     PROJECTS
-menutitle: projects
+menutitle: PROJECTS
 weight:    90
 excerpt:   our projects.
 ---
